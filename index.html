@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHARUAONA Christian - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Christian</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">À propos</span></a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav.experience">Expérience</span></a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> <span data-i18n="nav.projects">Projets</span></a></li>
+                    <li><a href="#dashboard" class="nav-link"><i class="fas fa-chart-bar"></i> <span data-i18n="nav.dashboard">Dashboard</span></a></li>
+                    <li><a href="#testimonials" class="nav-link"><i class="fas fa-quote-left"></i> <span data-i18n="nav.testimonials">Témoignages</span></a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+                </ul>
+                
+                <div class="nav-utils">
+                    <div class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="language-switcher">
+                        <select id="languageSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-i18n="hero.title">RAHARIJAONA Christian</h1>
+                    <h2 data-i18n="hero.subtitle">Analyste Business Assurance & Expert Data</h2>
+                    <p data-i18n="hero.description">Spécialisé dans l'analyse de données financières et la gestion des réclamations, je conçois des solutions automatisées pour optimiser les processus, sécuriser les transactions et améliorer la performance opérationnelle. Passionné par SQL, Excel, Power BI et le développement back-end, je transforme les données en décisions fiables et efficaces.</p>
+                    <div class="btn-container">
+                        <a href="#contact" class="btn btn-animated" data-i18n="buttons.contact">Me contacter</a>
+                        <a href="#about" class="btn btn-outline btn-animated" data-i18n="buttons.more">En savoir plus</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/christian-raharijaona-b8478227b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="RAHARIJAONA Christian" data-i18n-alt="hero.image.alt">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about.title">À propos de moi</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text card-hover-effect">
+                    <h3 data-i18n="about.subtitle">Qui suis-je?</h3>
+                    <p data-i18n="about.p1">Motivé et rigoureux, je m'adapte rapidement à de nouveaux outils et environnements. Mon expérience en <strong>Revenue Assurance</strong> et <strong>gestion des réclamations</strong> me permet d'analyser efficacement les données, identifier les anomalies et proposer des solutions back-end optimisées.</p>
+                    <p data-i18n="about.p2">Passionné par l'optimisation des processus, je maîtrise des outils comme <strong>SQL, Excel avancé, Power BI</strong> et le scripting Python pour automatiser les tâches et améliorer la performance opérationnelle. Je transforme les données en décisions fiables et actionnables.</p>
+                    <p data-i18n="about.p3">Toujours en quête de défis stimulants, je cherche à contribuer à des projets innovants, tout en développant constamment mes compétences techniques et analytiques.</p>
+                    <a href="assets/CV Christian.pdf" class="btn btn-animated" download data-i18n="about.cv">Télécharger mon CV</a>
+                </div>
+                <div class="about-skills card-hover-effect">
+                    <h3 data-i18n="skills.title">Mes compétences</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.analysis">Analyse de données</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.claims">Gestion des réclamations</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.python">Python</span>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.excel">Excel</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.sql">SQL</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="skills.powerbi">Power BI</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="experience.title">Mon expérience</h2>
+            </div>
+            <div class="experience-timeline">
+                <!-- Expérience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Mars 2025 - Aujourd'hui</div>
+                        <h3 class="timeline-title">Analyste Revenue Assurance & Fraud Management - MVola</h3>
+                        <p class="timeline-description" data-i18n="exp1.desc">Je contribue à sécuriser et optimiser les flux de revenus de l’entreprise tout en renforçant les stratégies de prévention de la fraude.</p>
+                        <p><strong data-i18n="exp1.resp_title">Principales responsabilités :</strong></p>
+                        <ul>
+                            <li data-i18n="exp1.resp1">🔍 Surveiller et analyser les flux de revenus pour détecter les anomalies et les potentielles pertes.</li>
+                            <li data-i18n="exp1.resp2">🛡️ Mettre en place et maintenir les contrôles de prévention de la fraude.</li>
+                            <li data-i18n="exp1.resp3">📊 Collaborer avec les équipes Finance, IT et Opérations pour garantir l’intégrité des données et la fiabilité des processus.</li>
+                            <li data-i18n="exp1.resp4">💡 Proposer des améliorations continues dans les processus d’assurance revenus et de détection de fraude.</li>
+                        </ul>
+                        <p><strong data-i18n="exp1.skills_label">Compétences acquises :</strong> <span data-i18n="exp1.skills">Analyse de données financières, identification des anomalies, conception de solutions back-end pour résoudre les problèmes, automatisation des contrôles.</span></p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Excel avancé</span>
+                            <span class="tool-tag">Optimisation script SQL</span>
+                            <span class="tool-tag">Perfectionnement Power BI</span>
+                            <span class="tool-tag">Automatisation sur Python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expérience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Février 2024 - Mars 2025</div>
+                        <h3 class="timeline-title">TASK FORCE MVOLA AVANCÉ</h3>
+                        <p class="timeline-description" data-i18n="exp2.desc">
+                            Spécialiste en analyse de données, j’ai contribué à l’identification et à la correction des anomalies système pour garantir la fiabilité des informations et la satisfaction client.
+                        </p>
+                        <p><strong data-i18n="exp2.resp_title">Principales responsabilités :</strong></p>
+                        <ul>
+                            <li data-i18n="exp2.resp1">🔍 Analyser les flux de données et détecter les incohérences ou anomalies.</li>
+                            <li data-i18n="exp2.resp2">🛠️ Proposer et mettre en œuvre des solutions correctives back-end adaptées.</li>
+                            <li data-i18n="exp2.resp3">📊 Automatiser et optimiser les processus via Excel et SQL pour améliorer la qualité et la précision des données.</li>
+                            <li data-i18n="exp2.resp4">💡 Assurer la continuité et la fiabilité des informations pour guider les décisions opérationnelles.</li>
+                        </ul>
+                        <p><strong data-i18n="exp2.skills_label">Compétences acquises :</strong> <span data-i18n="exp2.skills">Analyse avancée de données, détection et résolution d’anomalies, automatisation des processus, adaptation rapide à de nouveaux outils et systèmes.</span></p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Macro Excel</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Power BI</span>
+                            <span class="tool-tag">Analyse de données</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expérience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Janvier 2023 - Janvier 2024</div>
+                        <h3 class="timeline-title">Requêtes et Réclamations - MVola</h3>
+                        <p class="timeline-description" data-i18n="exp3.desc">
+                            Gestion des réclamations et requêtes clients pour différents services (WTB, BTW, Carte Visa, Mvola Avance, Retrait DAB, etc.), avec traitement et régularisation des anomalies de 2ème niveau et escalade au 3ème niveau si nécessaire.
+                        </p>
+                        <p><strong data-i18n="exp3.resp_title">Principales missions :</strong></p>
+                        <ul>
+                            <li data-i18n="exp3.resp1">🔍 Vérifier et analyser toutes les réclamations clients pour assurer leur résolution correcte.</li>
+                            <li data-i18n="exp3.resp2">🛠️ Régulariser les transactions ou escalader les cas complexes au 3ème niveau.</li>
+                            <li data-i18n="exp3.resp3">📌 Traiter les requêtes clients telles que ajustements manuels, justifications de transactions, réinitialisation de PIN, clôture de compte ou modification d’informations.</li>
+                        </ul>
+                        <p><strong data-i18n="exp3.skills_label">Compétences acquises :</strong> <span data-i18n="exp3.skills">Compréhension approfondie des besoins clients, mise en place de suivi pour éviter les doubles régularisations et garantir la fiabilité des opérations.</span></p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Gestion Réclamations</span>
+                            <span class="tool-tag">Analyse de données</span>
+                            <span class="tool-tag">Suivi opérationnel</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expérience 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Janvier 2021 - Septembre 2021</div>
+                        <h3 class="timeline-title">CERTIFICATION MVOLA</h3>
+                        <p class="timeline-description" data-i18n="exp4.desc">Vérification des dossiers clients pour la certification du compte afin de connaître les utilisateurs.</p>
+                        <p><strong data-i18n="exp4.skills_label">Compétences Acquis :</strong> <span data-i18n="exp4.skills">Rapidité de vérification identité client, Connaissance dossier requis pour la certification</span></p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Sentinel</span>
+                            <span class="tool-tag">S3</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expérience 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Septembre 2020 - FIN Décembre 2020</div>
+                        <h3 class="timeline-title">PORTABILITE et CERTIFICATION Free Money</h3>
+                        <p class="timeline-description" data-i18n="exp5.desc">Identification client et basculement SIM Free => Orange ou Expresso ou l'inverse.</p>
+                        <p><strong data-i18n="exp5.skills_label">Compétence acquis :</strong> <span data-i18n="exp5.skills">connaissance dans la partie Mobile</span></p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">CBS</span>
+                            <span class="tool-tag">Sentinel Free</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expérience 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-content card-hover-effect">
+                        <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Février 2020 - Août 2020</div>
+                        <h3 class="timeline-title">Opérateur de saisie DATASKAR</h3>
+                        <p class="timeline-description" data-i18n="exp6.desc">Identification et saisie des informations utiles sur des sites.</p>
+                        <p><strong data-i18n="exp6.skills_label">Compétence acquis :</strong> <span data-i18n="exp6.skills">Rapidité en Dactylographie</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="projects.title">Mes projets</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/recla.jpg" alt="Projet Mvola" data-i18n-alt="project1.alt">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="project1.title">Optimisation des réclamations Mvola</h3>
+                        <p class="project-description" data-i18n="project1.desc">Mise en place d'un système de suivi des réclamations clients pour réduire les temps de traitement et éviter les doubles régularisations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">Macro</span>
+                            <span class="project-tag">Analyse</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-animated" data-i18n="projects.see">Voir</a>
+                            <a href="#" class="btn-animated secondary" data-i18n="projects.code">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/dashboard.jpg" alt="Projet Dashboard" data-i18n-alt="project2.alt">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="project2.title">Dashboard de suivi des requêtes</h3>
+                        <p class="project-description" data-i18n="project2.desc">Création d'un tableau de bord Power BI pour visualiser les statistiques des requêtes clients et identifier les tendances.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-animated" data-i18n="projects.see">Voir</a>
+                            <a href="#" class="btn-animated secondary" data-i18n="projects.code">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/automatisation.jpg" alt="Projet Certification" data-i18n-alt="project3.alt">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="project3.title">Automatisation de la certification</h3>
+                        <p class="project-description" data-i18n="project3.desc">Développement d'un script pour automatiser la vérification des dossiers clients pour la certification Mvola.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Automatisation</span>
+                            <span class="project-tag">Sentinel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-animated" data-i18n="projects.see">Voir</a>
+                            <a href="#" class="btn-animated secondary" data-i18n="projects.code">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard section" id="dashboard">
+        <div class="dashboard-container">
+            <div class="section-title">
+                <h2 style="color: var(--text-light);" data-i18n="dashboard.title">Mes statistiques</h2>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card card-hover-effect">
+                    <div class="dashboard-icon icon-rotate"><i class="fas fa-tasks"></i></div>
+                    <div class="dashboard-value" id="projectsCount">0</div>
+                    <div class="dashboard-label" data-i18n="dashboard.projects">Projets complétés</div>
+                </div>
+                <div class="dashboard-card card-hover-effect">
+                    <div class="dashboard-icon icon-rotate"><i class="fas fa-users"></i></div>
+                    <div class="dashboard-value" id="clientsCount">0</div>
+                    <div class="dashboard-label" data-i18n="dashboard.clients">Clients satisfaits</div>
+                </div>
+                <div class="dashboard-card card-hover-effect">
+                    <div class="dashboard-icon icon-rotate"><i class="fas fa-chart-line"></i></div>
+                    <div class="dashboard-value" id="efficiencyCount">0%</div>
+                    <div class="dashboard-label" data-i18n="dashboard.efficiency">Efficacité</div>
+                </div>
+                <div class="dashboard-card card-hover-effect">
+                    <div class="dashboard-icon icon-rotate"><i class="fas fa-clock"></i></div>
+                    <div class="dashboard-value" id="experienceCount">0</div>
+                    <div class="dashboard-label" data-i18n="dashboard.years">Années d'expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="testimonials.title">Témoignages</h2>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-text" data-i18n="testimonial1.text">Christian a fait un excellent travail dans la gestion de nos réclamations Mvola. Son analyse minutieuse et ses solutions back-end ont considérablement réduit nos temps de traitement.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image"><img src="https://via.placeholder.com/100x100" alt="Manager Mvola"></div>
+                        <div class="author-info">
+                            <h4>Jean Dupont</h4>
+                            <p data-i18n="testimonial1.role">Manager, Mvola</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text" data-i18n="testimonial2.text">Le dashboard créé par Christian a transformé notre façon de suivre les requêtes clients. Nous pouvons maintenant identifier les tendances et améliorer nos processus.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image"><img src="https://via.placeholder.com/100x100" alt="Responsable clientèle"></div>
+                        <div class="author-info">
+                            <h4>Marie Lambert</h4>
+                            <p data-i18n="testimonial2.role">Responsable clientèle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text" data-i18n="testimonial3.text">Son travail sur l'automatisation de la certification a permis à notre équipe de gagner un temps précieux tout en réduisant les erreurs humaines.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image"><img src="https://via.placeholder.com/100x100" alt="Chef de projet"></div>
+                        <div class="author-info">
+                            <h4>Thomas Martin</h4>
+                            <p data-i18n="testimonial3.role">Chef de projet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="contact.title">Contactez-moi</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.subtitle">Discutons de votre projet</h3>
+                    <p data-i18n="contact.desc">Je suis intéressé par des opportunités de freelance, des projets innovants ou des postes en analyse back-end. Cependant, si vous avez d'autres demandes ou questions, n'hésitez pas à me contacter.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon icon-rotate"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 data-i18n="contact.location_label">Localisation</h4>
+                                <p data-i18n="contact.location">Antananarivo, Madagascar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon icon-rotate"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>raharijaonachristian127@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon icon-rotate"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4 data-i18n="contact.phone_label">Téléphone</h4>
+                                <p>+261 34 00 329 04</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form card-hover-effect">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form.name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required data-i18n-placeholder="form.name.placeholder">
+                            <div class="error-message" id="nameError" data-i18n="form.name.error">Veuillez entrer votre nom</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form.email">Email</label>
+                            <input type="email" id="email" class="form-control" required data-i18n-placeholder="form.email.placeholder">
+                            <div class="error-message" id="emailError" data-i18n="form.email.error">Veuillez entrer un email valide</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="form.subject">Sujet</label>
+                            <input type="text" id="subject" class="form-control" required data-i18n-placeholder="form.subject.placeholder">
+                            <div class="error-message" id="subjectError" data-i18n="form.subject.error">Veuillez entrer un sujet</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form.message">Message</label>
+                            <textarea id="message" class="form-control" required data-i18n-placeholder="form.message.placeholder"></textarea>
+                            <div class="error-message" id="messageError" data-i18n="form.message.error">Veuillez entrer votre message</div>
+                        </div>
+                        <button type="submit" class="form-submit btn-animated" data-i18n="form.submit">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="blog.title">Mon blog</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card card-hover-effect">
+                    <div class="blog-image">
+                        <img src="images/blog/optim.jpg" alt="Article blog" data-i18n-alt="blog1.alt">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">15 Juin 2023</div>
+                        <h3 class="blog-title" data-i18n="blog1.title">Optimisation des processus Mvola</h3>
+                        <p class="blog-excerpt" data-i18n="blog1.excerpt">Comment améliorer l'efficacité du traitement des réclamations clients dans les services financiers mobiles...</p>
+                        <a href="#" class="read-more" data-i18n="blog.readmore">Lire plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card card-hover-effect">
+                    <div class="blog-image">
+                        <img src="images/blog/power bi.jpg" alt="Article blog" data-i18n-alt="blog2.alt">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">10 Mai 2023</div>
+                        <h3 class="blog-title" data-i18n="blog2.title">Introduction à Power BI</h3>
+                        <p class="blog-excerpt" data-i18n="blog2.excerpt">Les bases pour créer des tableaux de bord efficaces pour le suivi des performances commerciales...</p>
+                        <a href="#" class="read-more" data-i18n="blog.readmore">Lire plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card card-hover-effect">
+                    <div class="blog-image">
+                        <img src="images/blog/excel.jpg" alt="Article blog" data-i18n-alt="blog3.alt">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">25 Avril 2023</div>
+                        <h3 class="blog-title" data-i18n="blog3.title">Automatisation avec Excel</h3>
+                        <p class="blog-excerpt" data-i18n="blog3.excerpt">Comment utiliser les macros Excel pour automatiser les tâches répétitives et gagner du temps...</p>
+                        <a href="#" class="read-more" data-i18n="blog.readmore">Lire plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Christian</h3>
+                    <p data-i18n="footer.desc">Analyste Back-end & Gestionnaire de Réclamations passionné par la création de solutions efficaces et performantes.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/christian-raharijaona-b8478227b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.quicklinks">Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+                        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+                        <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="service1">Analyse de données</a></li>
+                        <li><a href="#" data-i18n="service2">Gestion de réclamations</a></li>
+                        <li><a href="#" data-i18n="service3">Solutions Back-end</a></li>
+                        <li><a href="#" data-i18n="service4">Tableaux de bord Power BI</a></li>
+                        <li><a href="#" data-i18n="service5">Automatisation Excel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="contact.title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:raharijaonachristian127@gmail.com">raharijaonachristian127@gmail.com</a></li>
+                        <li><a href="tel:+261343833301">+261 34 38 333 01</a></li>
+                        <li data-i18n="footer.location">Antananarivo, Madagascar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RAHARIJAONA Christian. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <div class="chat-widget">
+        <div class="chat-button" id="chatButton"><i class="fas fa-comment-dots"></i></div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3 data-i18n="chat.title">Chat avec Christian</h3>
+                <button class="close-chat" id="closeChat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message received" data-i18n="chat.greeting">Bonjour! Comment puis-je vous aider aujourd'hui?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Tapez votre message..." data-i18n-placeholder="chat.placeholder">
+                <button class="send-button" id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
